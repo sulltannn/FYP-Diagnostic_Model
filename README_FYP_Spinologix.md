@@ -1,4 +1,4 @@
-# 🧠 Automated Spinal Stenosis Diagnosis Using MRI Scans
+#  Automated Spinal Stenosis Diagnosis Using MRI Scans
 
 This repository contains the full pipeline for a deep learning-based system to detect and classify lumbar spinal stenosis conditions using MRI scans. The solution follows a modular, clinically-aligned architecture, dividing the diagnostic process into three specialized tasks:
 
@@ -10,7 +10,7 @@ An integrated inference pipeline combines the outputs from each module to genera
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 .
@@ -22,7 +22,7 @@ An integrated inference pipeline combines the outputs from each module to genera
 
 ---
 
-## 🧩 Module 1: Instance Prediction
+##  Module 1: Instance Prediction
 
 - **Objective**: Predict the most relevant axial/sagittal slice (instance number) for each spinal level where a degenerative condition is present.
 - **Input**: 3D MRI volumes.
@@ -34,7 +34,7 @@ An integrated inference pipeline combines the outputs from each module to genera
 
 ---
 
-## 🧩 Module 2: Coordinate Prediction
+##  Module 2: Coordinate Prediction
 
 - **Objective**: Localize the region of stenosis by predicting the (x, y) coordinates of affected areas in 2D slices.
 - **Input**: 2D MRI slices centered at predicted instances.
@@ -46,7 +46,7 @@ An integrated inference pipeline combines the outputs from each module to genera
 
 ---
 
-## 🧩 Module 3: Severity Classification
+##  Module 3: Severity Classification
 
 - **Objective**: Predict the severity of stenosis (Normal, Moderate, Severe) for each spinal level and condition.
 - **Input**: 2D MRI slices cropped around predicted coordinates.
@@ -58,7 +58,7 @@ An integrated inference pipeline combines the outputs from each module to genera
 
 ---
 
-## 🔁 Inference Pipeline: `FYP_Inference.ipynb`
+##  Inference Pipeline: `FYP_Inference.ipynb`
 
 - **Objective**: Combine all three modules to perform full spine-level stenosis diagnosis.
 - **Flow**:
@@ -71,7 +71,7 @@ An integrated inference pipeline combines the outputs from each module to genera
 
 ---
 
-## 🧾 Notes
+##  Notes
 
 - All models were trained and evaluated using labeled DICOM MRI images.
 - Preprocessing steps include resampling, intensity normalization, and augmentation.
